@@ -15,3 +15,5 @@ https://ping.4ty2.fun/?time=3600&url=https://google.com
 ping does **not** repeat requests at regular intervals - but you can set periodic requests to ping which let you do that - [example](https://repl.it/@jajoosam/ping-test)
 
 It is recommended you self host ping, the hosted version at https://ping.4ty2.fun is running on a tiny 1GB VPS at [Vultr](https://vultr.com).
+
+Sponsored by [ICYMI](https://icymi.fyi)

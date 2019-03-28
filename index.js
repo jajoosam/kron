@@ -10,8 +10,6 @@ app.set('views', __dirname + '/views');
 
 var active = 0;
 
-
-
 app.get('/', (req, res) => {
 	if(req.query.time && req.query.url){
 		active+=1;
@@ -37,6 +35,4 @@ app.get('*', function(req, res){
   res.send(`🤷 - what are you even trying to do?`, 404);
 });
 
-
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
-

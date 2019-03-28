@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -19,7 +18,11 @@
   </head>
     <h1><a id="ping_0"></a>ping</h1>
     <h5>Schedule jobs by programatically requesting webhooks</h5>
+
+    <span>Currently, there are <code>{{current}}</code> active requests.</span>
+
     <br>
+
     <p>ping lets you schedule get requests to your server - which can be extremely useful for deployments on platforms such as <a href="https://zeit.co/now">now</a>, <a href="https://www.heroku.com">heroku</a>, <a href="https://repl.it">repl.it</a> and anyplace where your applications may sleep, preventing you from using inbuilt timer functions.</p>
 
     <p>ping is not meant to maintain uptime for your application, rather to schedule processes to occour within the precision of ~1s - opening up the possibility of cron jobs 🤖</p>

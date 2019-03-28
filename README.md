@@ -12,7 +12,10 @@ ping is not meant to maintain uptime for your application, rather to schedule pr
 https://ping.4ty2.fun/?time=3600&url=https://google.com
 ```
 
+You **should** encode URLs when passing them to ping. Once encoded - your the URLs you pass can have query strings as well 🥳
+
 ping does **not** repeat requests at regular intervals - but you can set periodic requests to ping which let you do that - [example](https://repl.it/@jajoosam/ping-test)
+
 
 It is recommended you self host ping, the hosted version at https://ping.4ty2.fun is running on a tiny 1GB VPS at [Vultr](https://vultr.com).
 

@@ -1,12 +1,4 @@
-{
+ {
   "schemaVersion": 2,
-  "dockerfileLines": [
-    "FROM golang:latest ",
-    "RUN go get -d -v golang.org/x/net/html ",
-    "RUN mkdir /app ",
-    "ADD ./ /app/ ",
-    "WORKDIR /app ",
-    "RUN go build -o main . ",
-    "CMD [\"/app/main\"]"
-  ]
-}
+  "templateId": "node/8.7.0"
+ }

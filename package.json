@@ -1,0 +1,16 @@
+{
+  "name": "pingback",
+  "version": "1.0.0",
+  "description": "Schedule jobs via http requests",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@jajoosam",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.4"
+  }
+}

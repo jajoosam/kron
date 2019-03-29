@@ -2,6 +2,7 @@
   <img src="https://res.cloudinary.com/jajoosam/image/upload/v1553837488/kron_1_my3lcm.png"><br>
   <strong>Schedule jobs by programatically requesting webhooks 🔗 🕒 😮</strong> 
 </p>
+<br>
 
 kron lets you schedule get requests to your server - which can be extremely useful for deployments on platforms such as [repl.it](https://repl.it), [glitch](https://glitch.com), [now](https://zeit.co/now), [heroku](https://www.heroku.com) -  and any place where your applications may sleep, preventing you from using inbuilt timer functions.
 

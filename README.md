@@ -9,7 +9,7 @@ kron is not meant to maintain uptime for your application, rather to schedule pr
 1 hour (`3600` seconds) after this request is sent, `https://google.com` will recieve a `get` request from `https://kron.4ty2.fun`.
 
 ```
-https://kron.4ty2.fun/?time=3600&url=https://google.com
+https://kron.4ty2.fun/?time=3600&url=https%3A%2F%2Fgoogle.com
 ```
 
 You **should** encode URLs when passing them to kron. Once encoded - your the URLs you pass can have query strings as well 🥳

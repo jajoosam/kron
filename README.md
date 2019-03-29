@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://res.cloudinary.com/jajoosam/image/upload/v1553837488/kron_1_my3lcm.png">
+  <img src="https://res.cloudinary.com/jajoosam/image/upload/v1553837488/kron_1_my3lcm.png"><br>
   <strong>Schedule jobs by programatically requesting webhooks 🔗 🕒 😮</strong> 
 </p>
 

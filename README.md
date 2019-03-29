@@ -16,6 +16,7 @@ https://kron.fun/?time=3600&url=https%3A%2F%2Fgoogle.com
 ```
 
 Check out an example in action 👇
+
 [![Try on repl.it](https://repl-badge.jajoosam.repl.co/try.png)](https://repl.it/@jajoosam/kron-test?ref=button)
 
 

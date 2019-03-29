@@ -1,7 +1,7 @@
 # kron
 Schedule jobs by programatically requesting webhooks 🔗 🕒 😮
 
-kron lets you schedule get requests to your server - which can be extremely useful for deployments on platforms such as [now](https://zeit.co/now), [heroku](https://www.heroku.com), [repl.it](https://repl.it) and any place where your applications may sleep, preventing you from using inbuilt timer functions.
+kron lets you schedule get requests to your server - which can be extremely useful for deployments on platforms such as [repl.it](https://repl.it), [glitch](https://glitch.com), [now](https://zeit.co/now), [heroku](https://www.heroku.com) -  and any place where your applications may sleep, preventing you from using inbuilt timer functions.
 
 kron is not meant to maintain uptime for your application, rather to schedule processes to occour within the precision of ~1s - opening up the possibility of cron jobs 🤖
 

@@ -15,7 +15,7 @@ kron is not meant to maintain uptime for your application, rather to schedule pr
 https://kron.fun/?time=3600&url=https%3A%2F%2Fgoogle.com
 ```
 
-You **should** encode URLs when passing them to kron. Once encoded - your the URLs you pass can have query strings as well 🥳
+You **should** encode URLs when passing them to kron. Once encoded - your the URLs you pass can have query strings as well 🤯
 
 kron does **not** repeat requests at regular intervals - but you can set periodic requests to kron which let you do that!
 

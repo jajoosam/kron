@@ -1,6 +1,7 @@
 const express = require('express');
 var mustacheExpress = require('mustache-express');
 const axios = require ('axios');
+const isbot = require('isbot');
 const app = express()
 const port = 3000
 
@@ -11,7 +12,7 @@ app.set('views', __dirname + '/views');
 var active = 0;
 
 app.get('/', (req, res) => {
-	if(req.query.time && req.query.url){
+	if(req.query.time && req.query.url && !isbot(req.headers["user-agent"])){
 		active+=1;
 		setTimeout(function(){
 		axios.get(decodeURIComponent(req.query.url))

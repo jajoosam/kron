@@ -10,7 +10,7 @@
   "author": "@jajoosam",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "express": "^4.16.4",
     "isbot": "^2.4.0",
     "mustache-express": "^1.2.8",

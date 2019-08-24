@@ -13,6 +13,7 @@
     "axios": "^0.18.0",
     "express": "^4.16.4",
     "isbot": "^2.4.0",
-    "mustache-express": "^1.2.8"
+    "mustache-express": "^1.2.8",
+    "nanoid": "^2.0.3"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "kron",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Schedule jobs via http requests",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,6 @@
     "axios": "^0.18.1",
     "date-fns": "^2.0.1",
     "express": "^4.16.4",
-    "isbot": "^2.4.0",
     "mongodb": "^3.3.1",
     "mustache-express": "^1.2.8",
     "nanoid": "^2.0.3",

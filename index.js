@@ -90,7 +90,7 @@ app.post(`/new`, (req, res) => {
   }
 });
 
-app.post(`/delete`, (req, res) => {
+app.post(`/cancel`, (req, res) => {
   if (req.body.id) {
     db.collection("IDs").findOne({ id: req.body.id }, function(err, kron) {
       if (kron === null) {
@@ -106,8 +106,8 @@ app.post(`/delete`, (req, res) => {
       );
       db.collection("IDs").deleteOne({ id: kron.id });
       return res.status(200).send({
-        error: true,
-        message: "Deleted it 🗑️"
+        error: false,
+        message: "Cancelled it 🗑️"
       });
     });
   } else {
@@ -129,6 +129,7 @@ app.post(`/status`, (req, res) => {
         });
       }
       kron.timeLeft = distance(new Date(kron.date));
+      delete kron._id;
       return res.status(200).send({
         error: false,
         message: kron
@@ -191,4 +192,4 @@ const run = () => {
   setInterval(go, 1000);
 };
 
-app.listen(3000, () => console.log(`Example app listening on port 3000!`));
+app.listen(3000, () => console.log(`kron is live on port 3000!`));

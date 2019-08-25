@@ -148,6 +148,12 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/docs", (req, res) => {
+  return res.redirect(
+    `https://www.notion.so/jajoosam/kron-documentation-23af2d7143474d07a8705d9b779c9a66`
+  );
+});
+
 app.get("*", function(req, res) {
   res.status(404).send(`🤷 - what are you even trying to do?`);
 });

@@ -25,6 +25,6 @@ kron is not meant to maintain uptime for your application, rather to schedule pr
 }
 ```
 
-Full documentation on https://docs.kron.fun 💯
+Full documentation on https://kron.fun/docs 💯
 
 Is kron useful to you? Consider helping out on [patreon](https://patreon.com/jajoosam) 😄

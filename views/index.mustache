@@ -31,16 +31,22 @@
 
   
     <link rel="shortcut icon" type="image/x-icon" href="https://res.cloudinary.com/jajoosam/image/upload/v1553837041/favicon_1_julyp1.png" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
     <style>code,pre{background-color:#40363a}table,textarea{width:100%}html{font-size:62.5%;font-family:monospace;}body{font-size:1.8rem;line-height:1.618;max-width:650px;margin:auto;color:#d9d8dc;background-color:#120c0e;padding:13px}@media (max-width:684px){body{font-size:1.53rem}}@media (max-width:382px){body{font-size:1.35rem}}h1,h2,h3,h4,h5,h6{line-height:1.1;font-family:monospace;font-weight:700;overflow-wrap:break-word;word-wrap:break-word;-ms-word-break:break-all;word-break:break-word;-ms-hyphens:auto;-moz-hyphens:auto;-webkit-hyphens:auto;hyphens:auto}h1{font-size:2.35em}h2{font-size:2em}h3{font-size:1.75em}h4{font-size:1.5em}h5{font-size:1.25em}h6{font-size:1em}small,sub,sup{font-size:75%}hr{border-color:#eb99a1}a{text-decoration:none;color:#eb99a1}a:hover{color:#DA4453;border-bottom:2px solid #d9d8dc}ul{padding-left:1.4em}li{margin-bottom:.4em}blockquote{font-style:italic;margin-left:1.5em;padding-left:1em;border-left:3px solid #eb99a1}img{max-width:100%}pre{display:block;padding:1em;overflow-x:auto}code{font-size:.9em;padding:0 .5em;white-space:pre-wrap}pre>code{padding:0;background-color:transparent;white-space:pre}table{text-align:justify;border-collapse:collapse}td,th{padding:.5em;border-bottom:1px solid #40363a}input,textarea{border:1px solid #d9d8dc}input:focus,textarea:focus{border:1px solid #eb99a1}.button,button,input[type=submit],input[type=reset],input[type=button]{display:inline-block;padding:5px 10px;text-align:center;text-decoration:none;white-space:nowrap;background-color:#eb99a1;color:#120c0e;border-radius:1px;border:1px solid #eb99a1;cursor:pointer;box-sizing:border-box}.button[disabled],button[disabled],input[type=submit][disabled],input[type=reset][disabled],input[type=button][disabled]{cursor:default;opacity:.5}.button:focus,.button:hover,button:focus,button:hover,input[type=submit]:focus,input[type=submit]:hover,input[type=reset]:focus,input[type=reset]:hover,input[type=button]:focus,input[type=button]:hover{background-color:#DA4453;border-color:#DA4453;color:#120c0e;outline:0}input[type],select,textarea{color:#d9d8dc;padding:6px 10px;margin-bottom:10px;background-color:#40363a;border:1px solid #40363a;border-radius:4px;box-shadow:none;box-sizing:border-box}input[type]:focus,select:focus,textarea:focus{border:1px solid #eb99a1;outline:0}input[type=checkbox]:focus{outline:#eb99a1 dotted 1px}fieldset,label,legend{display:block;margin-bottom:.5rem;font-weight:600}</style>
     <style>
       #example{
         display: block;
         padding: 1em;
       }
+      span.key {
+        color: #03A6FF;
+      }
+      span.value {
+        color: #FFCB5B;
+      }
       span{
         color: #eb99a1;
       }
+
     </style>
   </head>
     <h1><a id="kron_0"></a>kron</h1>
@@ -54,19 +60,24 @@
 
     <p>kron is not meant to maintain uptime for your application, rather to schedule processes to occour within the precision of ~1s - opening up the possibility of cron jobs 🤖</p>
 
-    <p><em>example:</em><br>
-    1 hour (<code>3600</code> seconds) after this request is sent, <code>https://google.com</code> will recieve a <code>get</code> request from <code>https://kron.fun</code>.</p>
+    <p><span><em>example:</em></span> <span class="key">POST</span> <span class="value">https://kron.fun/new</span><br>
+    1 hour after this request is sent, <code>https://example.com/sendEmail</code> will recieve a <code>POST</code> request from <code>https://kron.fun</code>.</p>
 <br>
-    <code style="display: block; padding: 1em">https://kron.fun/?time=3600&url=https%3A%2F%2Fgoogle.com</code>
+    <code style="display: block; padding: 1em">{
+  <span class="key">"url"</span>: <span class="value">"https://example.com/sendEmail"</span>,
+  <span class="key">"duration"</span>: <span class="value">"1 hour"</span>,
+  <span class="key">"method"</span>: <span class="value">"POST"</span>,
+  <span class="key">"payload"</span>:{
+    <span class="key">"username"</span>: <span class="value">"johnDoe"</span>,
+    <span class="key">"ID"</span>: <span class="value">"3wr12rfcewu"</span>
+  }</span>
+}</code>
 <br>
 <p>
 Check out an example in action 👉
 <a href="https://repl.it/@jajoosam/kron-test?ref=button"><img style="vertical-align:middle; max-width:25%" src="https://repl-badge.jajoosam.repl.co/try.png" alt="Try on repl.it" /></a></p>
 <br>
-  <p>You <strong>should</strong> encode URLs when passing them to kron. Once encoded - your the URLs you pass can have query strings as well 🤯</p>
-    <p>kron does <strong>not</strong> repeat requests at regular intervals - but you can set periodic requests to kron which let you do that - <a href="https://repl.it/@jajoosam/kron-test">example</a>.</p>
-
-    <p>It is recommended you self host kron, the hosted version at <a href="https://kron.fun">https://kron.fun</a> is running on a tiny 1GB VPS at <a href="https://vultr.com">Vultr</a>.</p>
+  <p>It is recommended you self host kron, the hosted version at <a href="https://kron.fun">https://kron.fun</a> is running on a tiny 1GB VPS at <a href="https://vultr.com">Vultr</a>.</p>
   <br>
   Made by <a href="https://twitter.com/jajoosam">@jajoosam</a>
   <br>

@@ -8,7 +8,7 @@ const nanoID = require("nanoid");
 const MongoClient = require("mongodb").MongoClient;
 let db = null;
 
-const dbURL = `mongodb+srv://${process.env.user}:${process.env.password}@${process.env.url}/test?retryWrites=true&w=majority`;
+const dbURL = process.env.mongoURL;
 
 const client = new MongoClient(dbURL, { useNewUrlParser: true });
 client.connect((err, ret) => {

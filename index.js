@@ -189,7 +189,7 @@ const send = id => {
 };
 
 const run = () => {
-  setInterval(go, 1000);
+  setInterval(go, 900);
 };
 
 app.listen(3000, () => console.log(`kron is live on port 3000!`));

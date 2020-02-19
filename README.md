@@ -9,9 +9,9 @@ kron lets you schedule get requests to your server - which can be extremely usef
 
 kron is not meant to maintain uptime for your application, rather to schedule processes to occur within the precision of ~1s - opening up the possibility of cron jobs 🤖
 
-*example*: **POST** https://kron.fun/new
+*example*: **POST** https://kron.4ty2.fun/new
 
-`1 hour` after this request is sent, `https://example.com/sendEmail` will recieve a `POST` request from https://kron.fun.
+`1 hour` after this request is sent, `https://example.com/sendEmail` will recieve a `POST` request from https://kron.4ty2.fun.
 
 ```json
 {
@@ -25,6 +25,6 @@ kron is not meant to maintain uptime for your application, rather to schedule pr
 }
 ```
 
-Full documentation on https://kron.fun/docs 💯
+Full documentation on https://kron.4ty2.fun/docs 💯
 
 Is kron useful to you? Consider helping out on [patreon](https://patreon.com/jajoosam) 😄

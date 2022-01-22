@@ -15,7 +15,7 @@
     "express": "^4.16.4",
     "mongodb": "^3.3.1",
     "mustache-express": "^1.2.8",
-    "nanoid": "^2.0.3",
+    "nanoid": "^3.1.31",
     "parse-duration": "^0.1.1"
   }
 }

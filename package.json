@@ -12,7 +12,7 @@
   "dependencies": {
     "axios": "^0.18.1",
     "date-fns": "^2.0.1",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "mongodb": "^3.3.1",
     "mustache-express": "^1.2.8",
     "nanoid": "^2.0.3",
